@@ -42,7 +42,7 @@ jobs:
          run: |
            git clone https://${{ secrets.GH_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} CREDS
        - name: Running hubbax
-         timeout-minutes: 350
+         timeout-minutes: 340
          continue-on-error: true
          run: |
            sudo sh hubbax.sh
